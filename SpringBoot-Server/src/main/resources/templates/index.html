@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script>
+        document.getElementById('btn').click(
+            function () {
+                fetch('/getSth')
+                    .then(response => response.json())
+                    .then(json => console.log(json));
+                // document.getElementById('mark').prepend()
+            }
+        )
+
+        function send(){
+            axios.get()
+        }
+
+    </script>
+</head>
+<body>
+<form action="/submit" method="post">
+    <button id="btn">获取资源</button>
+    <p id="mark">获取资源如下</p>
+
+    <label>电话</label>
+    <input type="text" name="tel">
+
+    <label>密码</label>
+    <input type="password" name="psw">
+
+    <input type="checkbox" name="user" value="小明">
+    <label>小明</label>
+    <input type="checkbox" name="user" value="小红">
+    <label>小红</label>
+    <input type="checkbox" name="user" value="小强">
+    <label>小强</label>
+    <input type="checkbox" name="user" value="小李">
+    <label>小李</label>
+    <input type="checkbox" name="user" value="小王">
+    <label>小王</label>
+    <button type="submit">提交</button>
+</form>
+
+</body>
+</html>

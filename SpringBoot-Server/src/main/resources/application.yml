@@ -1,0 +1,7 @@
+spring:
+  web:
+    resources:
+      static-locations: classpath:/static/,classpath:/templates/
+
+server:
+  port: 8801

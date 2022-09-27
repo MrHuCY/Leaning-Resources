@@ -18,7 +18,7 @@ const content = document.getElementById('p');
 
 function change() {
 
-  //其使用fetch也能发请求，但是axios更直观一点
+  //其使用fetch也能发请求，但是axios更直观一点。
   axios.get('/submit', {
     baseURL: 'http://localhost:8801',
     headers: {'head': 'newhead'},
